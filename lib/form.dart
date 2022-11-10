@@ -235,27 +235,27 @@ class _MyFormPageState extends State<MyFormPage> {
                         children: <Widget>[
                           Center(child: const Text('Informasi Data', style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),)),
                           Center(
-                                        child: Column(
-                                          children: [
-                                            SizedBox(height: 20),
-                                            Text('Nama Lengkap: $_namaLengkap'),
-                                            SizedBox(height: 20),
-                                            Text('Jenjang: ${jenjangSarjana == true
-                                                    ? 'Sarjana'
-                                                    : (jenjangDiploma == true
-                                                        ? 'Diploma'
-                                                        : (jenjangMagister ==
-                                                                true
-                                                            ? 'Magister'
-                                                            : 'Doktor'))}'),
-                                            SizedBox(height: 20),
-                                            Text('Umur: $umur'),
-                                            SizedBox(height: 20),
-                                            Text('Kelas: $kelasPBP'),
-                                            SizedBox(
-                                              height: 20,
-                                            ),
-                                            Text('Practice Mode: ${_nilaiSwitch == true ? 'On' : 'Off'}'),
+                            child: Column(
+                                children: [
+                                SizedBox(height: 20),
+                                Text('Nama Lengkap: $_namaLengkap'),
+                                SizedBox(height: 20),
+                                Text('Jenjang: ${jenjangSarjana == true
+                                        ? 'Sarjana'
+                                        : (jenjangDiploma == true
+                                            ? 'Diploma'
+                                            : (jenjangMagister ==
+                                                    true
+                                                ? 'Magister'
+                                                : 'Doktor'))}'),
+                                SizedBox(height: 20),
+                                Text('Umur: $umur'),
+                                SizedBox(height: 20),
+                                Text('Kelas: $kelasPBP'),
+                                SizedBox(
+                                    height: 20,
+                                ),
+                                Text('Practice Mode: ${_nilaiSwitch == true ? 'On' : 'Off'}'),
                           SizedBox(height: 20),
                           // TODO: Munculkan informasi yang didapat dari form
                           TextButton(
